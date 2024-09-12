@@ -1,0 +1,12 @@
+:root{
+    --cor-primaria: #550441;
+    --cor-secundaria: #EAAA0F;
+    --fonte-padrao: "Arial";
+    --arredondamento: 12px;
+    --sombra: 4px 3px 6px #fffffff2;
+}
+
+@font-face{
+    font-family: "";
+    src: url();
+}

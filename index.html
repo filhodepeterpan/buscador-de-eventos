@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.query.css">
+    <title>Buscador de Eventos</title>
+</head>
+<body>
+    <div class="conteudo">
+        <div class="formulario">
+            <h1 id="formulario-titulo">BUSCADOR DE EVENTOS</h1>
+            <label>Informe o tipo de evento:</label>
+            <br>
+            <input type="text" name="tipoDeEvento" id="tipoDeEvento" maxlength="7" placeholder="Ex: Musica" pattern="[A-Za-z]+" title="Por favor, não use acentos ou caracteres especiais.">
+            <br>
+            <label>Qual o seu nível de interesse?</label>
+            <br>
+            <input type="text" name="nivelDeInteresse" id="nivelDeInteresse" maxlength="5" placeholder="Ex: Alto" pattern="[A-Za-z]+" title="Por favor, não use acentos ou caracteres especiais.">
+            <button onclick="envia()" id="botaoEnviar">Enviar</button>
+        </div>
+        <div class="saida">
+            <p id="resultado"></p>
+        </div>
+    </div>
+    <footer>
+        <a class="creditos" href="https://github.com/filhodepeterpan" target="_blank">
+            <span>Douglas Soares</span>
+            <img id="icone-github" width="20px" src="/img/github-icon.png">
+        </a>
+    </footer>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
