@@ -1,17 +1,20 @@
 @import url(root.css);
 
+/* Celulares */
 @media(max-width:1200px){
     body{
         background: url(../img/foto-de-show-smartphone.jpg);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .conteudo{
         position: relative;
         left: 0;
         top: 0;
-        margin: 0 auto;
         transform: none;
         padding: 5rem 0 0 0;
-        margin: 0 1rem 0 1rem;
+        margin: 1rem 1rem 0 1rem;
     }
     #formulario-titulo{
         font-size: 1.225rem;
@@ -25,7 +28,7 @@
         font-size: 0.7rem;
     }
     footer{
-        position: absolute;
+        position: relative;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -39,5 +42,46 @@
     }
     #resultado{
         font-size: 0.8rem;
+    }
+}
+
+/* Tablets */
+@media (max-width: 1024px) and (min-width: 600px){
+    body{
+        background-image: url(../img/foto-de-show.jpg);
+    }
+    .conteudo{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10rem;
+    }
+    #formulario-titulo{
+        font-size: 3rem;
+        margin: 0 0 3rem 0;
+    }
+    input{
+        padding: 1rem 0;
+        margin: 1rem 0 1rem 0;
+    }
+    input::placeholder{
+        margin: 0 0 0 0.3rem;
+    }
+    label{
+        font-size: 1.5rem;
+    }
+    #botaoEnviar{
+        margin: 3rem 0 0 0;
+        font-size: 2rem;
+    }
+    #resultado{
+        font-size: 1.6rem;
+    }
+    .creditos{
+        margin: 6rem 0 0 0;
+        padding: 1.5rem 0;
+        font-size: 1.5rem;
+    }
+    #icone-github{
+        width: 40px;
     }
 }
