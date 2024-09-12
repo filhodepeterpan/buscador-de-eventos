@@ -84,6 +84,26 @@ function envia(){
            }
         break;
 
+        case "cinema":
+           switch(nivelDeInteresse){
+                case "alto":
+                    resultado.innerHTML = "Muitos filmes incríveis passando no Cinema! Aproveite as sessões dos seus diretores e estúdios favoritos!";
+                break;
+
+                case "medio":
+                    resultado.innerHTML = "O cinema é uma ótima forma de se entreter. Um bom filme pode salvar uma noite tediosa.";
+                break;
+
+                case "baixo":
+                    resultado.innerHTML = "Talvez um filme em casa seja uma melhor opção!";
+                break;
+
+                default:
+                    resultado.innerHTML = "Para expressar seu nível de interesse, use apenas os termos \"alto\", \"medio\" ou \"baixo\", sem acentuações.";
+                break;
+           }
+        break;
+        
         default:
             resultado.innerHTML= `O evento "${tipoDeEvento}" não foi encontrado. Tente digitar sem usar acentuações.`;
         break;
