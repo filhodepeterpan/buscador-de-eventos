@@ -6,9 +6,11 @@
 }
 body{
     box-sizing: border-box;
+    height: 100%;
     color: #DEDDEA;
-    background-image: url(../img/foto-de-show.jpg); /*Créditos da Imagem: Vecteezy*/
+    background-image: url(../img/foto-de-show.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     font-family: var(--fonte-padrao);
 }
 a{
